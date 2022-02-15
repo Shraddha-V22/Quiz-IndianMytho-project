@@ -133,20 +133,20 @@ if(score >= 5) {
   for(var i=6; i<12; i++) {
   var khela = quizQAO[i];
   play(khela.question, khela.answer)};
-}else {
-  console.log("You couldn't clear the 1ST Level!")
-};
-console.log("You scored " + score + "!");
 
-
-if(score >= 10) {
+  if(score >= 10) {
   console.log("You have succeeded to the 3RD Level!");
   console.log("");
 
   for(var i=12; i<quizQAO.length; i++) {
   var khela = quizQAO[i];
   play(khela.question, khela.answer)};
-}else {
+  }else {
   console.log("You couldn't clear the 2ND Level!")
+  };
+  console.log("You scored " + score + "!");
+
+}else {
+  console.log("You couldn't clear the 1ST Level!");
+  console.log("You scored " + score + "!");
 };
-console.log("You scored " + score + "!");
